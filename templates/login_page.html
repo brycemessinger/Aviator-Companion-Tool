@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login_page.css">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat&display=swap" rel="stylesheet"> -->
+</head>
+
+<form action="/login" method="POST">
+
+    <div class="body_container">
+        <img src="/static/registration.png" alt="login_image" class="login_image">
+        <h1 class="login_text">Login</h1>
+        
+        <div class="usernamebox">
+            <label for="usernames" id="usernametext">Full Name</label>
+            <input type="text" id="usernamefield" name="usernames"><br>
+        </div>
+        
+        <div class="passwordbox">
+            <label for="password" id="passwordtext">Password</label><br>
+            <input type="text" id="passwordfield" name="password"><br>
+        </div>
+
+        <input type="submit" value="submit" id="submit"><br>
+    </div>
+    <a href="/registration" id="registration">Register Here!</a>
+</form>
+</body>
+</html>

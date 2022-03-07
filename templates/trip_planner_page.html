@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/trip_planner_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Flight Log</title>
+</head>
+<body>
+    <form action="/trip_planner" method="POST">
+    <div id="headribbon">
+        <div id="topbar">
+            <a href="home">
+                <img src="/static/aircrafthangar.jpg" alt="home button" id="homebutton">
+            </a>
+        <div id="headbox1">
+            <div class="datebox">
+                    <label for="date">Date of Flight:</label>
+                    <input type="date" id="date" name="date">
+                
+            </div>
+            <div class="refuelbox">
+                <label for="refuel" id="refuelneededlabel">Refuel needed<br>during trip?</label><br>
+                <select id="refuelneeded" name="refuel">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                </div>
+        </div>
+        
+        <div id="headbox2">
+            <div class="triptime">
+                <label for="hours" id="triptimelabel">Estimated Duration</label>
+                <input type="text" id="triptime" name="hours"><br>
+            </div>
+            <div class="tripmiles">
+                <label for="miles" id="tripmileslabel">Estimated Miles</label>
+                <input type="text" id="tripmiles" name="miles"><br>
+            </div>
+            
+        </div>
+        <div id="headbox3">
+            <div class="startbox">
+                <label for="startpoint" id="date">Starting Airport</label>
+                <input type="text" id="startpoint" name="startpoint"><br>
+            </div>
+            <div class="endbox">
+                <label for="endpoint" id="endpointlabel">Ending Airport</label>
+                <input type="text" id="endpoint" name="endpoint"><br>
+            </div>
+            
+        </div>
+        <a href="/logout">
+            <img src="/static/logoutimage.png" alt="logout image" id="logoutbutton">   
+        </a>
+    </div>
+    <input type="submit" value="Create Trip!" id="submitbutton">
+    </div>
+
+    <div>
+        {%for trip in trip_planner_list%}
+        <h1><br>Date:        {{trip.date}}<br>Refuel Needed?        {{trip.refuel}}<br>Total Time (hours):        {{trip.hours}}<br>Total Distance (miles):        {{trip.miles}}<br>Start Point:        {{trip.startpoint}}<br>End Point:        {{trip.endpoint}}<br></h1>
+        {%endfor%}
+        
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+body {
+    /* background-color: #EF6461; */
+    background-color: white;
+}
+
+.body_container {
+    display:flex;
+    flex-direction: column;
+    /* background-color: grey; */
+    /* margin-top: 15%;
+    margin-left: 46%; */
+}
+
+.registration_image {
+    margin-left: 40%;
+    height: 200px;
+    width: 200px;
+}
+
+
+.registration_text {
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.fullnamebox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#fullnametext {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#fullnamefield {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 6.5%;
+  }
+
+
+.passwordbox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#passwordtext {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#passwordfield {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 7%;
+  }
+
+
+.enginetypebox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#enginetypetext {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#enginetypefield {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 5%;
+  }
+
+
+
+
+.homeairportbox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+#homeairporttext {
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+#homeairportfield {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 4%;
+  }  
+
+  #submit {
+      width: 15%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 20px;
+      margin-left: 43%;
+
+  }
+
+

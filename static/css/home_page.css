@@ -1,0 +1,275 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+#top_ribbon {
+    /* background-color: #2BD9FE;
+    height: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2BD9FE;
+    margin: 0px;
+    border: 20px;
+    border-style: solid;
+    border-color: #2BD9FE;
+    padding: 0 16px;
+    font-size: 100%;
+}
+#homebutton {
+    width: 70px;
+    height: 70px;
+}
+#logoutbutton {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.boxcontainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    background-color: grey;
+}
+
+#body_box1 {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    background-color:  #2BD9FE;
+    min-height: 100%;
+    width: 270px;
+}
+
+#tripplannertext {
+    font-size: 30px;
+    margin-left: 6% ;
+    margin-top: 40%;
+    color: white;
+    text-decoration: underline;
+}
+#flightlogtext {
+    font-size: 30px;
+    margin-left: 6% ;
+    margin-top: 25%;
+    color: white;
+    text-decoration: underline;
+}
+#airportlocatortext {
+    margin-left: 6% ;
+    margin-top: 25%;
+    color: white;
+    text-decoration: underline;
+}
+#aviationnewstext {
+    margin-left: 6% ;
+    margin-top: 25%;
+    color: white;
+    text-decoration: underline;
+}
+
+#githubtext {
+    margin-left: 6% ;
+    margin-top: 153%;
+    color: white;
+    text-decoration: underline;
+}
+
+#body_box2 {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+}
+
+#boxrow1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#boxrow2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#boxrow3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#mediumbox1 {
+    background-color: #EF6461;
+    width: 700px;
+    height: 330px;
+    margin: 10px;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+#medium1question {
+    display: flex;
+    justify-content: center;
+    /* margin: px; */
+}
+#medium1answer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+#mediumbox2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 0px;
+    width: 700px;
+    height: 330px;
+}
+#aircraftimage{
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+}
+#aircrafttext{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#longbox1 {
+    background-color: #EF6461;
+    margin: 10px;
+    width: 950px;
+}
+#longbox1top {
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#temperature {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 130px;
+}
+#windspeed {
+    text-align: center;
+    font-size: 70px;
+}
+#longbox1bottom {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#longbox2 {
+    background-color: #EF6461;
+    margin: 10px;
+    height: 330px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 950px;
+}
+#longbox2top {
+    font-size: 50px;
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#longbox2bottom {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* #miles{
+    font-size: 20px;
+
+} */
+
+#shortbox1 {
+    text-align: center;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 3px;
+    height: 180px;
+    width: 322px;
+}
+
+#shortbox2 {
+    text-align: center;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 3px;
+    height: 180px;
+    width: 325px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#elevationtext{
+    margin-top: 30px;
+}
+#shortbox3 {
+    text-align: center;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 3px;
+    height: 180px;
+    width: 325px;
+}
+    #barometertext{
+        margin-top: 30px;
+}
+#shortbox4 {
+    text-align: center;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 3px;
+    height: 180px;
+    width: 325px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#timetext{
+    margin-top: 30px;
+}
+#shortbox5 {
+    text-align: center;
+    background-color: #EF6461;
+    margin: 10px;
+    margin-top: 3px;
+    height: 180px;
+    width: 325px;
+}
+#updatetext{
+    margin-top: 30px;
+}
+
+/* footer {
+    margin-top: -53px;
+} */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/home_page.css">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body>
+    <div id="top_ribbon">
+        <a href="home">
+        <img src="/static/aircrafthangar.jpg" alt="home button" id="homebutton">
+        </a>
+        <h1>Bryce Messinger</h1>
+        <a href="/logout">
+            <img src="/static/logoutimage.png" alt="logout image" id="logoutbutton">   
+        </a>
+    </div>
+
+<div class="boxcontainer">
+
+    <div id="body_box1">
+        <a id="tripplannertext" href="trip_planner">Trip Planner</a>
+        <a id="flightlogtext" href="flight_log">Flight Log</a>
+        <h1 id="airportlocatortext"><a href="https://www.airportlocator.net/">Airport Locator</a></h1>
+        <h1 id="aviationnewstext"><a href="http://www.aviationworldnews.com/">Aviation News</a></h1>
+        <h1 id="githubtext"><a href="https://github.com/brycemessinger">Github</a></h1>
+     
+
+        
+    </div>
+    
+    
+    <div id="body_box2">
+        
+        <div id="boxrow1">
+        <div id="mediumbox1">
+            <h1 id="medium1question">Ideal Flight <br> Conditions?</h1>
+            <h1 id="medium1answer">✓</h1>
+        </div>
+        <div id="longbox1">
+            <div id="longbox1top">
+                <img src="/static/Partly cloudy icon.png" alt="">
+                <h1 id="temperature">{{weather_info["temperature"]}}</h1>
+                <h1 id="windspeed">15 <br> knots</h1>
+               
+            </div>
+            <div id="longbox1bottom">
+                <h1 id="cloud">{{weather_info["cloud_conditions"]}}</h1>
+                <h1 id="temperaturetext">Temperature</h1>
+                <h1 id="windspeedtext">Windspeed</h1>
+            </div>
+        </div>
+        </div>
+
+        <div id="boxrow2">
+        <div id="longbox2">
+            <div id="longbox2top">
+                <h1 id="visibility">{{weather_info["visibility"]}}</h1>
+                <h1 id="humidity">{{weather_info["humidity"]}}%</h1>
+                <h1 id="dewpoint">{{weather_info["dewpoint"]}}°</h1>
+               
+            </div>
+            <div id="longbox2bottom">
+                <h1 id="visibilitytext">Visibility <br>(miles)</h1>
+                <h1 id="humiditytext">Humidity</h1>
+                <h1 id="dewpointtext">Dewpoint</h1>
+            </div>
+        </div>
+        <div id="mediumbox2">
+            <img src="/static/single engine plane.png" alt="single engine plane" id="aircraftimage">
+            <h1 id="aircrafttext">Single Engine Aircraft</h1>
+        </div>
+        </div>
+
+
+        <div id="boxrow2">
+        <div id="shortbox1">
+            <h1>Lat<br>28.42°N<br>Lon<br>81.32°W</h1>
+        </div>
+        <div id="shortbox2">
+            <h1 id="elevationtext">Elevation:<br>{{weather_info["elevation"]}}ft</h1>
+        </div>
+        <div id="shortbox3">
+            <h1 id="barometertext">Barometer:<br>{{weather_info["barometer"]}}in.</h1>
+        </div>
+        <div id="shortbox4">
+            <h1 id="timetext">Current Time:<br>{{current_time}}</h1>
+        </div>
+        <div id="shortbox5">
+            <h1 id="updatetext">Current Airport:<br>{{weather_info["icao"]}}</h1>
+        </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

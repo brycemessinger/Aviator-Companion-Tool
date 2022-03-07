@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/registration_page.css">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat&display=swap" rel="stylesheet"> -->
+</head>
+
+<form action="registration" method="POST"
+
+    <div class="body_container">
+        <img src="/static/registration.png" alt="registration_image" class="registration_image">
+        <h1 class="registration_text">Account Registration</h1>
+        
+        <div class="fullnamebox">
+            <label for="usernames" id="fullnametext">Username</label>
+            <input type="text" id="fullnamefield" name="usernames"><br>
+        </div>
+        
+        <div class="passwordbox">
+            <label for="password" id="passwordtext">Password</label><br>
+            <input type="text" id="passwordfield" name="password"><br>
+        </div>
+
+        <div class="enginetypebox">
+            <label for="enginetypefield" id="enginetypetext">Aircraft <br>Engine Type</label><br>
+            <select id="enginetypefield" name="enginetypefield">
+                <option value="">Single Engine Piston</option>
+                <option value="">Turboprop</option>
+                <option value="">Jet</option>
+            </select>
+        </div>
+
+        <div class="homeairportbox">
+            <label for="homeairport" id="homeairporttext">Home Airport</label><br>
+            <input type="text" id="homeairportfield" name="homeairport"><br>
+        </div>
+
+        <input type="submit" value="submit" id="submit"><br>
+    </div>
+
+</body>
+</html>
